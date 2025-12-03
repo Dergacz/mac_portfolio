@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "dock": {
+    "portfolio": "Portfolio",
+    "articles": "Articles",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "skills": "Skills",
+    "archive": "Archive"
+  },
+  "work": {
+    "title": "Work",
+    "workName": {
+      "name": "",
+      "description": [
+
+      ]
+    }
+  },
+  "about": {
+    "title": "",
+    "subtitle": "",
+    "description": [
+
+    ]
+  },
+  "resume": {
+    "title": "Resume"
+  },
+  "trash": {
+    "title": "Trash"
+  },
+  "gallery": {
+    "library": "Library",
+    "memories": "Memories",
+    "places": "Places",
+    "people": "People",
+    "favorites": "Favorites"
+  },
+  "portfolio": {
+    "title": "Stanislau's Portfolio"
+  }
+}
+
