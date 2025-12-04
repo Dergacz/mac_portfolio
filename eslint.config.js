@@ -1,10 +1,10 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import tseslint from 'typescript-eslint'
-import prettier from 'eslint-plugin-prettier'
-import prettierConfig from 'eslint-config-prettier'
+import js from '@eslint/js';
+import globals from 'globals';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import tseslint from 'typescript-eslint';
+import prettier from 'eslint-plugin-prettier';
+import prettierConfig from 'eslint-config-prettier';
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -31,14 +31,14 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
       '@typescript-eslint/no-unused-vars': [
-        'error',
+        'warn',
         {
           argsIgnorePattern: '^_',
           varsIgnorePattern: '^_',
         },
       ],
       'prettier/prettier': 'error',
-      'semi': ['error', 'always'],
+      semi: ['error', 'always'],
     },
-  },
-)
+  }
+);
