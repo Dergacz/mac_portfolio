@@ -16,17 +16,13 @@
     "title": "Work",
     "workName": {
       "name": "",
-      "description": [
-
-      ]
+      "description": []
     }
   },
   "about": {
     "title": "",
     "subtitle": "",
-    "description": [
-
-    ]
+    "description": []
   },
   "resume": {
     "title": "Resume"
@@ -43,6 +39,9 @@
   },
   "portfolio": {
     "title": "Stanislau's Portfolio"
+  },
+  "welcome": {
+    "title": "portfolio",
+    "subtitle": "Hi, I'm Stanislau! Welcome to my"
   }
 }
-

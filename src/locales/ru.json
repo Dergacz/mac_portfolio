@@ -16,17 +16,13 @@
     "title": "Работа",
     "workTitle": {
       "name": "",
-      "description": [
-
-      ]
+      "description": []
     }
   },
   "about": {
     "title": "Обо мне",
     "subtitle": "Познакомьтесь с Разработчиком За Кодом",
-    "description": [
-
-    ]
+    "description": []
   },
   "resume": {
     "title": "Резюме"
@@ -43,6 +39,9 @@
   },
   "portfolio": {
     "title": "Портфолио Станислава"
+  },
+  "welcome": {
+    "title": "портфолио",
+    "subtitle": "Привет, я Станислав! Добро пожаловать в мой"
   }
 }
-
