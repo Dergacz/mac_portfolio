@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "projects": "Projekty",
+    "contact": "Kontakt",
+    "resume": "CV"
+  },
+  "dock": {
+    "portfolio": "Portfolio",
+    "articles": "Artykuły",
+    "gallery": "Galeria",
+    "contact": "Kontakt",
+    "skills": "Umiejętności",
+    "archive": "Archiwum"
+  },
+  "work": {
+    "title": "Praca",
+    "workName": {
+      "name": "",
+      "description": [
+
+      ]
+    }
+  },
+  "about": {
+    "title": "O mnie",
+    "subtitle": "Poznaj Programistę Za Kodem",
+    "description": [
+
+    ]
+  },
+  "resume": {
+    "title": "CV"
+  },
+  "trash": {
+    "title": "Kosz"
+  },
+  "gallery": {
+    "library": "Biblioteka",
+    "memories": "Wspomnienia",
+    "places": "Miejsca",
+    "people": "Ludzie",
+    "favorites": "Ulubione"
+  },
+  "portfolio": {
+    "title": "Portfolio Stanisława"
+  }
+}
+

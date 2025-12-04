@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "projects": "Проекты",
+    "contact": "Контакты",
+    "resume": "Резюме"
+  },
+  "dock": {
+    "portfolio": "Портфолио",
+    "articles": "Статьи",
+    "gallery": "Галерея",
+    "contact": "Контакты",
+    "skills": "Навыки",
+    "archive": "Архив"
+  },
+  "work": {
+    "title": "Работа",
+    "workTitle": {
+      "name": "",
+      "description": [
+
+      ]
+    }
+  },
+  "about": {
+    "title": "Обо мне",
+    "subtitle": "Познакомьтесь с Разработчиком За Кодом",
+    "description": [
+
+    ]
+  },
+  "resume": {
+    "title": "Резюме"
+  },
+  "trash": {
+    "title": "Корзина"
+  },
+  "gallery": {
+    "library": "Библиотека",
+    "memories": "Воспоминания",
+    "places": "Места",
+    "people": "Люди",
+    "favorites": "Избранное"
+  },
+  "portfolio": {
+    "title": "Портфолио Станислава"
+  }
+}
+
