@@ -1,6 +1,7 @@
 import { navIcons, getNavLinks } from '../constants'
 import { useLanguage } from '../hooks/useLanguage'
 import LangSwitcher from './LangSwitcher'
+import dayjs from 'dayjs'
 
 const Navbar = () => {
   const { t } = useLanguage()
@@ -25,13 +26,15 @@ const Navbar = () => {
         <ul>
           {navIcons.map(({ id, img }) => (
             <li key={id}>
-              <img src={img} alt="icon" />
+              <img src={img} alt={`icon-${id}`} />
             </li>
           ))}
           <li>
             <LangSwitcher />
           </li>
         </ul>
+
+        <time>{dayjs().format('ddd MMM D hh:mm A')}</time>
       </div>
     </nav>
   )
