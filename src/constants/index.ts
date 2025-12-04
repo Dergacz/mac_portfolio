@@ -1,4 +1,4 @@
-import type { TFunction } from 'i18next'
+import type { TFunction } from 'i18next';
 
 export const getNavLinks = (t: TFunction) => [
   {
@@ -16,7 +16,7 @@ export const getNavLinks = (t: TFunction) => [
     name: t('nav.resume'),
     type: 'resume',
   },
-]
+];
 
 const navLinks = [
   {
@@ -34,7 +34,7 @@ const navLinks = [
     name: 'Resume',
     type: 'resume',
   },
-]
+];
 
 const navIcons = [
   {
@@ -53,7 +53,7 @@ const navIcons = [
     id: 4,
     img: '/icons/mode.svg',
   },
-]
+];
 
 export const getDockApps = (t: TFunction) => [
   {
@@ -92,7 +92,7 @@ export const getDockApps = (t: TFunction) => [
     icon: 'trash.png',
     canOpen: false,
   },
-]
+];
 
 const dockApps = [
   {
@@ -131,7 +131,7 @@ const dockApps = [
     icon: 'trash.png',
     canOpen: false,
   },
-]
+];
 
 const blogPosts = [
   {
@@ -156,7 +156,7 @@ const blogPosts = [
     image: '/images/blog3.png',
     link: 'https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations',
   },
-]
+];
 
 const techStack = [
   {
@@ -183,7 +183,7 @@ const techStack = [
     category: 'Dev Tools',
     items: ['Git', 'GitHub', 'Docker'],
   },
-]
+];
 
 const socials = [
   {
@@ -214,7 +214,7 @@ const socials = [
     bg: '#05b6f6',
     link: 'https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all',
   },
-]
+];
 
 export const getPhotosLinks = (t: TFunction) => [
   {
@@ -242,7 +242,7 @@ export const getPhotosLinks = (t: TFunction) => [
     icon: '/icons/gicon5.svg',
     title: t('gallery.favorites'),
   },
-]
+];
 
 const photosLinks = [
   {
@@ -270,7 +270,7 @@ const photosLinks = [
     icon: '/icons/gicon5.svg',
     title: 'Favorites',
   },
-]
+];
 
 const gallery = [
   {
@@ -289,7 +289,7 @@ const gallery = [
     id: 4,
     img: '/images/gal4.png',
   },
-]
+];
 
 export {
   navLinks,
@@ -300,7 +300,7 @@ export {
   socials,
   photosLinks,
   gallery,
-}
+};
 
 const WORK_LOCATION = {
   id: 1,
@@ -468,7 +468,7 @@ const WORK_LOCATION = {
       ],
     },
   ],
-}
+};
 
 const ABOUT_LOCATION = {
   id: 2,
@@ -521,7 +521,7 @@ const ABOUT_LOCATION = {
       ],
     },
   ],
-}
+};
 
 const RESUME_LOCATION = {
   id: 3,
@@ -540,7 +540,7 @@ const RESUME_LOCATION = {
       // href: "/your/resume/path.pdf",
     },
   ],
-}
+};
 
 const TRASH_LOCATION = {
   id: 4,
@@ -568,22 +568,22 @@ const TRASH_LOCATION = {
       imageUrl: '/images/trash-2.png',
     },
   ],
-}
+};
 
-import { getTranslatedLocations } from '../utils/translations'
+import { getTranslatedLocations } from '../utils/translations';
 
 export const getLocations = (t: TFunction) => {
-  return getTranslatedLocations(t)
-}
+  return getTranslatedLocations(t);
+};
 
 export const locations = {
   work: WORK_LOCATION,
   about: ABOUT_LOCATION,
   resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
-}
+};
 
-const INITIAL_Z_INDEX = 1000
+const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG = {
   finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
@@ -594,6 +594,6 @@ const WINDOW_CONFIG = {
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-}
+};
 
-export { INITIAL_Z_INDEX, WINDOW_CONFIG }
+export { INITIAL_Z_INDEX, WINDOW_CONFIG };

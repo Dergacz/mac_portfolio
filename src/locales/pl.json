@@ -16,17 +16,13 @@
     "title": "Praca",
     "workName": {
       "name": "",
-      "description": [
-
-      ]
+      "description": []
     }
   },
   "about": {
     "title": "O mnie",
     "subtitle": "Poznaj Programistę Za Kodem",
-    "description": [
-
-    ]
+    "description": []
   },
   "resume": {
     "title": "CV"
@@ -43,6 +39,9 @@
   },
   "portfolio": {
     "title": "Portfolio Stanisława"
+  },
+  "welcome": {
+    "title": "portfolio",
+    "subtitle": "Cześć, jestem Stanisław! Witaj w moim"
   }
 }
-

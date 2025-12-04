@@ -1,11 +1,11 @@
-import { navIcons, getNavLinks } from '../constants'
-import { useLanguage } from '../hooks/useLanguage'
-import LangSwitcher from './LangSwitcher'
-import dayjs from 'dayjs'
+import { navIcons, getNavLinks } from '../constants';
+import { useLanguage } from '../hooks/useLanguage';
+import LangSwitcher from './LangSwitcher';
+import dayjs from 'dayjs';
 
 const Navbar = () => {
-  const { t } = useLanguage()
-  const navLinks = getNavLinks(t)
+  const { t } = useLanguage();
+  const navLinks = getNavLinks(t);
 
   return (
     <nav>
@@ -37,7 +37,7 @@ const Navbar = () => {
         <time>{dayjs().format('ddd MMM D hh:mm A')}</time>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

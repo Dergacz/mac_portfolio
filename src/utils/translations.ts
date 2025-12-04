@@ -1,4 +1,4 @@
-import type { TFunction } from 'i18next'
+import type { TFunction } from 'i18next';
 
 export const getTranslatedNavLinks = (t: TFunction) => [
   {
@@ -16,7 +16,7 @@ export const getTranslatedNavLinks = (t: TFunction) => [
     name: t('nav.resume'),
     type: 'resume',
   },
-]
+];
 
 export const getTranslatedDockApps = (t: TFunction) => [
   {
@@ -55,7 +55,7 @@ export const getTranslatedDockApps = (t: TFunction) => [
     icon: 'trash.png',
     canOpen: false,
   },
-]
+];
 
 export const getTranslatedPhotosLinks = (t: TFunction) => [
   {
@@ -83,7 +83,7 @@ export const getTranslatedPhotosLinks = (t: TFunction) => [
     icon: '/icons/gicon5.svg',
     title: t('gallery.favorites'),
   },
-]
+];
 
 export const getTranslatedWorkLocation = (t: TFunction) => ({
   id: 1,
@@ -107,7 +107,9 @@ export const getTranslatedWorkLocation = (t: TFunction) => ({
           kind: 'file',
           fileType: 'txt',
           position: 'top-5 left-10',
-          description: t('work.nike.description', { returnObjects: true }) as string[],
+          description: t('work.nike.description', {
+            returnObjects: true,
+          }) as string[],
         },
         {
           id: 2,
@@ -153,7 +155,9 @@ export const getTranslatedWorkLocation = (t: TFunction) => ({
           kind: 'file',
           fileType: 'txt',
           position: 'top-5 right-10',
-          description: t('work.aiResume.description', { returnObjects: true }) as string[],
+          description: t('work.aiResume.description', {
+            returnObjects: true,
+          }) as string[],
         },
         {
           id: 2,
@@ -199,7 +203,9 @@ export const getTranslatedWorkLocation = (t: TFunction) => ({
           kind: 'file',
           fileType: 'txt',
           position: 'top-5 left-10',
-          description: t('work.foodDelivery.description', { returnObjects: true }) as string[],
+          description: t('work.foodDelivery.description', {
+            returnObjects: true,
+          }) as string[],
         },
         {
           id: 2,
@@ -231,7 +237,7 @@ export const getTranslatedWorkLocation = (t: TFunction) => ({
       ],
     },
   ],
-})
+});
 
 export const getTranslatedAboutLocation = (t: TFunction) => ({
   id: 2,
@@ -279,7 +285,7 @@ export const getTranslatedAboutLocation = (t: TFunction) => ({
       description: t('about.description', { returnObjects: true }) as string[],
     },
   ],
-})
+});
 
 export const getTranslatedResumeLocation = (t: TFunction) => ({
   id: 3,
@@ -296,7 +302,7 @@ export const getTranslatedResumeLocation = (t: TFunction) => ({
       fileType: 'pdf',
     },
   ],
-})
+});
 
 export const getTranslatedTrashLocation = (t: TFunction) => ({
   id: 4,
@@ -324,12 +330,11 @@ export const getTranslatedTrashLocation = (t: TFunction) => ({
       imageUrl: '/images/trash-2.png',
     },
   ],
-})
+});
 
 export const getTranslatedLocations = (t: TFunction) => ({
   work: getTranslatedWorkLocation(t),
   about: getTranslatedAboutLocation(t),
   resume: getTranslatedResumeLocation(t),
   trash: getTranslatedTrashLocation(t),
-})
-
+});

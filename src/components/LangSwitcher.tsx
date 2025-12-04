@@ -1,16 +1,16 @@
-import { useState, useRef, useEffect } from 'react'
-import { useLanguage } from '../hooks/useLanguage'
+import { useState, useRef, useEffect } from 'react';
+import { useLanguage } from '../hooks/useLanguage';
 
 const LangSwitcher = () => {
-  const { language, changeLanguage } = useLanguage()
-  const [isOpen, setIsOpen] = useState(false)
-  const selectRef = useRef<HTMLDivElement>(null)
+  const { language, changeLanguage } = useLanguage();
+  const [isOpen, setIsOpen] = useState(false);
+  const selectRef = useRef<HTMLDivElement>(null);
 
   const languages = [
     { code: 'en', label: 'EN' },
     { code: 'pl', label: 'PL' },
     { code: 'ru', label: 'RU' },
-  ]
+  ];
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -18,21 +18,21 @@ const LangSwitcher = () => {
         selectRef.current &&
         !selectRef.current.contains(event.target as Node)
       ) {
-        setIsOpen(false)
+        setIsOpen(false);
       }
-    }
+    };
 
     if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [isOpen])
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
 
   const currentLanguage =
-    languages.find(lang => lang.code === language) || languages[0]
+    languages.find(lang => lang.code === language) || languages[0];
 
   return (
     <div ref={selectRef} className="relative">
@@ -50,8 +50,8 @@ const LangSwitcher = () => {
             <button
               key={lang.code}
               onClick={() => {
-                changeLanguage(lang.code as 'en' | 'pl' | 'ru')
-                setIsOpen(false)
+                changeLanguage(lang.code as 'en' | 'pl' | 'ru');
+                setIsOpen(false);
               }}
               className={`w-full px-3 py-2 text-left text-sm hover:bg-gray-100 transition-colors first:rounded-t last:rounded-b ${
                 language === lang.code ? 'bg-blue-50 font-medium' : ''
@@ -63,7 +63,7 @@ const LangSwitcher = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default LangSwitcher
+export default LangSwitcher;
