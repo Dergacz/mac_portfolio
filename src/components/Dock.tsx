@@ -4,13 +4,32 @@ import { getDockApps } from '../constants';
 import { useLanguage } from '../hooks/useLanguage';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import useWindowStore from '../store/window';
+import type { DockApp, WindowKey } from '../types/constants';
 
 const Dock = () => {
   const { t } = useLanguage();
+  const { openWindow, closeWindow, windows } = useWindowStore();
   const dockApps = getDockApps(t);
   const dockRef = useRef<HTMLDivElement>(null);
 
-  const toggleApp = () => {};
+  const isValidWindowKey = (id: string): id is WindowKey => {
+    return Object.prototype.hasOwnProperty.call(windows, id);
+  };
+
+  const toggleApp = (app: DockApp) => {
+    if (!app.canOpen) return;
+
+    if (!isValidWindowKey(app.id)) return;
+
+    const window = windows[app.id];
+
+    if (window.isOpen) {
+      closeWindow(app.id);
+    } else {
+      openWindow(app.id);
+    }
+  };
 
   useGSAP(() => {
     const dock = dockRef.current;
@@ -61,22 +80,22 @@ const Dock = () => {
   return (
     <section id="dock">
       <div ref={dockRef} className="dock-container">
-        {dockApps.map(({ id, name, icon, canOpen }) => (
-          <div key={id} className="relative flex justify-center">
+        {dockApps.map(app => (
+          <div key={app.id} className="relative flex justify-center">
             <button
               type="button"
               className="dock-icon"
-              aria-label={t(name)}
+              aria-label={t(app.name)}
               data-tooltip-id="dock-tooltip"
-              data-tooltip-content={t(name)}
-              disabled={!canOpen}
-              onClick={toggleApp}
+              data-tooltip-content={t(app.name)}
+              disabled={!app.canOpen}
+              onClick={() => toggleApp(app)}
             >
               <img
-                src={`/images/${icon}`}
-                alt={name}
+                src={`/images/${app.icon}`}
+                alt={app.name}
                 loading="lazy"
-                className={canOpen ? '' : 'opacity-60'}
+                className={app.canOpen ? '' : 'opacity-60'}
               />
             </button>
           </div>
