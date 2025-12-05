@@ -1,5 +1,5 @@
 import { LanguageProvider } from './contexts/LanguageContext';
-import { Navbar, Welcome } from './components/index.ts';
+import { Dock, Navbar, Welcome } from './components/index.ts';
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <main>
         <Navbar />
         <Welcome />
+        <Dock />
       </main>
     </LanguageProvider>
   );

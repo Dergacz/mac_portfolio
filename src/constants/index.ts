@@ -1,4 +1,5 @@
 import type { TFunction } from 'i18next';
+import type { DockApp } from '../types/constants';
 
 export const getNavLinks = (t: TFunction) => [
   {
@@ -55,7 +56,7 @@ const navIcons = [
   },
 ];
 
-export const getDockApps = (t: TFunction) => [
+export const getDockApps = (t: TFunction): DockApp[] => [
   {
     id: 'finder',
     name: t('dock.portfolio'),
